@@ -179,7 +179,7 @@ img {
   position: absolute;
   display: block;
   right: 32px;
-  bottom: 16px;
+  bottom: 24px;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -188,6 +188,12 @@ img {
   background-position: center;
   background-color: #ecf2f8;
   z-index: 3;
+}
+
+@media (min-width: 750px) {
+  .article__repost-link {
+    bottom: 32px;
+  }
 }
 
 .article__repost-link--active {
