@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 3 version
+*/
+
 img {
   max-width: 100%;
   height: auto;
@@ -36,6 +43,8 @@ img {
 
 @media (min-width: 750px) {
   .article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 730px;
     margin-top: 260px;
@@ -45,20 +54,25 @@ img {
 .article__img {
   width: 100%;
   height: 205px;
-  object-fit: cover;
-  object-position: center 15%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 15%;
+     object-position: center 15%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
 @media (min-width: 750px) {
   .article__img {
-    flex-grow: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
     max-width: 285px;
     height: 280px;
-    object-fit: cover;
-  object-position: 0 center;
-
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 10% center;
+       object-position: 10% center;
     border-top-right-radius: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -66,7 +80,8 @@ img {
 }
 
 .article__content {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 36px;
   padding-left: 32px;
   padding-right: 32px;
@@ -110,13 +125,16 @@ img {
 @media (min-width: 750px) {
   .article__text {
     margin-bottom: 20px;
-
   }
 }
 
 .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .user__info {
@@ -182,10 +200,13 @@ img {
 
 .repost {
   position: absolute;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   bottom: 0;
   left: 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding-top: 22px;
@@ -227,9 +248,15 @@ img {
 }
 
 .repost__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -245,8 +272,12 @@ img {
 
 .repost__link:focus,
 .repost__link:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 0.8;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s;
 }
 
