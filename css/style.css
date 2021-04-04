@@ -57,7 +57,7 @@ img {
     max-width: 285px;
     height: auto;
     object-fit: cover;
-  object-position: 20% center;
+  object-position: 0 center;
 
     border-top-right-radius: 0;
     border-top-left-radius: 10px;
