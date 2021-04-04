@@ -55,7 +55,7 @@ img {
   .article__img {
     flex-grow: 0;
     max-width: 285px;
-    height: auto;
+    height: 280px;
     object-fit: cover;
   object-position: 0 center;
 
