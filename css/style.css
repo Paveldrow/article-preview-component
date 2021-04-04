@@ -1,0 +1,254 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+.page {
+  height: 100%;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.article {
+  position: relative;
+  width: 327px;
+  margin: 0 auto;
+  margin-top: 74px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+@media (min-width: 750px) {
+  .article {
+    display: flex;
+    width: 730px;
+    margin-top: 260px;
+  }
+}
+
+.article__img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  object-position: center 15%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+@media (min-width: 750px) {
+  .article__img {
+    max-width: 285px;
+    height: auto;
+    object-fit: cover;
+    object-position: 0 center;
+    border-top-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.article__content {
+  padding-top: 36px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 750px) {
+  .article__content {
+    padding-top: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 32px;
+  }
+}
+
+.article__title {
+  margin: 0;
+  color: #48556a;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+@media (min-width: 750px) {
+  .article__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.article__text {
+  margin-bottom: 32px;
+  color: #6e8098;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user__info {
+  margin: 0;
+  padding: 0;
+}
+
+.user__name {
+  margin: 0;
+}
+
+.user__date {
+  margin: 0;
+  padding: 0;
+}
+
+.user__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.user__name {
+  color: #48556a;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.user__date {
+  color: #9daec2;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.article__repost-link {
+  position: absolute;
+  display: block;
+  right: 32px;
+  bottom: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-image: url('../images/icon-share.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ecf2f8;
+  z-index: 3;
+}
+
+.article__repost-link--active {
+  background-image: url('../images/icon-share-active.svg');
+  background-color: #6e8098;
+}
+
+.article__repost-link:hover {
+  opacity: 0.7;
+}
+
+.repost {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #48556a;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (min-width: 750px) {
+  .repost {
+    width: 248px;
+    min-height: 55px;
+    left: 76%;
+    bottom: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border-radius: 10px;
+  }
+}
+
+.repost--hidden {
+  display: none;
+}
+
+.repost__title {
+  margin: 0;
+  margin-right: 21px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  color: #9daec2;
+}
+
+.repost__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.repost__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+}
+
+.repost__link:focus,
+.repost__link:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: 0.1s;
+}
+
+.repost__link--facebook {
+  background-image: url('../images/icon-facebook.svg');
+}
+
+.repost__link--twitter {
+  margin-top: 2px;
+  background-image: url('../images/icon-twitter.svg');
+}
+
+.repost__link--pinterest {
+  background-image: url('../images/icon-pinterest.svg');
+}
