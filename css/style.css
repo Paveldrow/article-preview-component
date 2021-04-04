@@ -53,11 +53,9 @@ img {
 
 @media (min-width: 750px) {
   .article__img {
-    flex-grow: 0;
     max-width: 285px;
-    height: auto;
+    height: 280px;
     object-fit: cover;
-    object-position: 0 center;
     border-top-right-radius: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -65,6 +63,7 @@ img {
 }
 
 .article__content {
+  box-sizing: border-box;
   padding-top: 36px;
   padding-left: 32px;
   padding-right: 32px;
@@ -103,6 +102,13 @@ img {
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.12px;
+}
+
+@media (min-width: 750px) {
+  .article__text {
+    margin-bottom: 20px;
+
+  }
 }
 
 .user {
