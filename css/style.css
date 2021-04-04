@@ -55,6 +55,7 @@ img {
   .article__img {
     max-width: 285px;
     height: 280px;
+    
     object-fit: cover;
     border-top-right-radius: 0;
     border-top-left-radius: 10px;
