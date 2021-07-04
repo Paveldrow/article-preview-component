@@ -1,3 +1,3 @@
-Пример реализации карточки с описанием.
+Реализация адаптивной карточки с описанием.
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
